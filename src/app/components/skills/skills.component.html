@@ -9,7 +9,16 @@
           </div>
 
           <div class="col-xs-12 col-sm-6 level">
-            <span class="circle" *ngFor="let item of skill.level | slice:0:10">{{item}}</span>
+            <span [ngClass]="skill.level > 1 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 2 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 3 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 4 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 5 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 6 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 7 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 8 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 9 ? 'filled-circle': 'circle'"></span>
+            <span [ngClass]="skill.level > 10 ? 'filled-circle': 'circle'"></span>
           </div>
         </div>
 

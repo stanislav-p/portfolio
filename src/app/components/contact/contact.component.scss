@@ -38,7 +38,7 @@
     background: $main-color;
     padding: 3px 60px;
     letter-spacing: 1px;
-    border-color: $main-color;
+    border: 2px solid $main-color;
     @include transition(ease, 0.1);
     outline: none;
 

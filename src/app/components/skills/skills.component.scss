@@ -18,6 +18,11 @@
         background: $circle-color;
         margin: 0 3px;
       }
+
+      .filled-circle {
+        @extend .circle;
+        background: $main-color;
+      }
     }
   }
 }

@@ -1,0 +1,20 @@
+<section id="skills">
+  <div class="container">
+    <div class="row">
+      <h2 class="title">Skills</h2>
+      <div class="info">
+        <div class="skill" *ngFor="let skill of skills">
+          <div class="col-xs-12 col-sm-6 name">
+            <p>{{ skill.name }}</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 level">
+            <span class="circle" *ngFor="let item of skill.level | slice:0:10">{{item}}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+

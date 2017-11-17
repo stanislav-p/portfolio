@@ -1,0 +1,61 @@
+@import "../../../assets/styles/variables";
+
+#footer {
+  color: $secondary-color;
+  background: $main-color;
+  padding: 2% 0;
+
+  .info {
+    .communication {
+      .name {
+        font-weight: bold;
+      }
+    }
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  #footer {
+
+    .info {
+      .communication {
+        text-align: center;
+        padding-bottom: 15px;
+        .name {
+          padding-right: 5px;
+        }
+      }
+
+      .logo {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  #footer {
+
+    .info {
+      display: flex;
+
+      .communication {
+        .name {
+          padding-right: 8px;
+        }
+      }
+
+      .logo {
+        text-align: right;
+        margin: auto;
+      }
+    }
+  }
+}

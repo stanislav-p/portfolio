@@ -1,0 +1,20 @@
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="info">
+        <div class="col-xs-12 col-sm-6 communication">
+          <div *ngFor="let item of communication">
+            <span class="name">{{ item.key }}:</span> <span>{{ item.value }}</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 logo">
+          <a [scrollTo]="'#home'" [scrollDuration]="1000">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.458in" height="0.25in">
+              <text kerning="auto" font-family="Tahoma" fill="rgb(255, 255, 255)" transform="matrix( 0.60431654676259, 0, 0, 0.8769291663843,0.66207194244605, 20.3923624974587)" font-size="30px">&#60;&#47;&#62;</text>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

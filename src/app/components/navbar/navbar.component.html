@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" [scrollTo]="'#home'">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.458in" height="0.25in">
+          <text kerning="auto" font-family="Tahoma" fill="rgb(255, 255, 255)" transform="matrix( 0.60431654676259, 0, 0, 0.8769291663843,0.66207194244605, 20.3923624974587)" font-size="30px">&#60;&#47;&#62;</text>
+        </svg>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a [scrollTo]="'#home'" [scrollDuration]="1000">Home</a></li>
+        <li><a [scrollTo]="'#about'" [scrollDuration]="1000">About</a></li>
+        <li><a [scrollTo]="'#skills'" [scrollDuration]="1000">Skills</a></li>
+        <li><a [scrollTo]="'#contact'" [scrollDuration]="1000">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

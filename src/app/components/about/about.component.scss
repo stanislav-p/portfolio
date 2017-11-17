@@ -1,0 +1,88 @@
+@import "../../../assets/styles/mixins";
+
+
+#about {
+  padding: 2% 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .info {
+
+    .goals,
+    .dreams {
+      h3 {
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+    }
+
+    .image {
+      text-align: center;
+      margin: auto;
+
+      img {
+        @include border-radius(100%);
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .info {
+
+    .goals,
+    .dreams {
+      h3 {
+        text-align: center;
+        font-size: 26px;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 15px;
+      }
+    }
+
+    .image {
+      img {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .info {
+    display: flex;
+
+    .goals,
+    .dreams {
+      h3 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .goals {
+      text-align: right;
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .dreams {
+      text-align: left;
+    }
+  }
+}
+
+

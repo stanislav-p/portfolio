@@ -1,0 +1,88 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixins";
+
+#skills {
+  padding: 2% 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .info {
+    .name {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .level {
+      .circle {
+        @include border-radius(100%);
+        display: inline-block;
+        background: $circle-color;
+        margin: 0 3px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #skills {
+    .info {
+      .skill {
+        display: flex;
+      }
+
+      .name {
+        font-size: 30px;
+        text-align: right;
+      }
+
+      .level {
+        margin: auto;
+
+        .circle {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #skills {
+    .info {
+      text-align: center;
+
+      .name {
+        font-size: 22px;
+      }
+
+      .level {
+        margin-bottom: 20px;
+
+        .circle {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #skills {
+    .info {
+
+      .name {
+        font-size: 18px;
+      }
+
+      .level {
+        margin-bottom: 15px;
+
+        .circle {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}

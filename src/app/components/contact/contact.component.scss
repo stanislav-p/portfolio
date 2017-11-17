@@ -1,0 +1,72 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixins";
+
+
+#contact {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .communication {
+    .key {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .value {
+      color: rgb(150, 150, 150);
+    }
+  }
+
+  .form {
+    input,
+    textarea {
+      width: 100%;
+      padding: 4px 8px;
+
+      &:focus {
+        outline-color: $main-color;
+      }
+    }
+
+    textarea {
+      margin-top: 10px;
+    }
+  }
+
+  .send-btn {
+    text-transform: uppercase;
+    color: $secondary-color;
+    background: $main-color;
+    padding: 3px 60px;
+    letter-spacing: 1px;
+    border-color: $main-color;
+    @include transition(ease, 0.1);
+    outline: none;
+
+    &:hover {
+      color: $main-color;
+      background: $secondary-color
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact {
+    padding: 3% 0;
+    text-align: center;
+
+    .communication {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    padding: 2% 0;
+
+    .send-btn {
+      display: block;
+      margin: auto;
+    }
+  }
+}

@@ -11,7 +11,7 @@ export class SkillsComponent implements OnInit {
     {name: 'CSS3', level: 8},
     {name: 'JavaScript', level: 8},
     {name: 'ReactJS', level: 2},
-    {name: 'AngularJS', level: 5},
+    {name: 'AngularJS', level: 6},
   ];
 
   constructor() { }
